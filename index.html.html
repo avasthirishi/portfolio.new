@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/cec40587c1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/Portfolio/images/power_favicon.png">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            padding: 45px;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .logo {
+            float: left;
+            padding-left: 60px;
+        }
+
+        header nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            padding: 20px;
+            color: #000;
+            transition: 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        aside img {
+            width: 33%;
+            float: right;
+            padding-right: 150px;
+        }
+
+        .about {
+            text-align: center;
+            /* border: 1px solid black; */
+            margin-top: 150px;
+            padding: 20px 120px;
+        }
+
+        .about div h1,
+        p {
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .projects {
+            /* border: 1px solid; */
+            padding: 110px 40px 100px;
+        }
+
+        fieldset {
+            border: 2px solid black;
+            padding: 60px;
+        }
+
+        fieldset legend {
+            text-align: center;
+        }
+
+        fieldset legend h1 {
+            font-size: 27px;
+        }
+
+        .project1 {
+            /* border: 1px solid skyblue;  */
+            text-align: center;
+            width: 26%;
+            float: left;
+        }
+
+        .project2 {
+            /* border: 1px solid; */
+            text-align: center;
+            width: 26%;
+            float: right;
+        }
+
+        .project1 img,
+        .project2 img {
+            height: 200px;
+            width: 350px;
+            */
+        }
+
+        .project3 {
+            /* border: 1px solid;  */
+            text-align: center;
+            width: 26%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .project3 img {
+            width: 350px;
+            height: 200px;
+        }
+
+        .last_sec {
+            padding: 30px 60px 80px;
+        }
+
+        .last_sec h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding: 60px;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 3px 10px;
+        }
+
+        input,
+        textarea {
+            border-radius: 3px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-color: blue;
+        }
+
+        textarea {
+            border: 2px solid blue;
+        }
+
+        label {
+            color: blue;
+        }
+
+        #submit:hover {
+            background-color: rgb(60, 60, 234);
+            color: white;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 70px 0px 56px;
+            margin: 0 auto;
+            background: #6cf;
+        }
+
+        .footer div {
+            text-align: center;
+        }
+
+        .footer_icons a {
+            margin: 20px;
+
+        }
+
+        .footer_icons i {
+            font-size: 30px;
+            color: #1e3050;
+        }
+
+        .back_to_top {
+
+            float: right;
+            padding-right: 25px;
+            color: #1e3050;
+        }
+
+        .back_to_top p a {
+            text-decoration: none;
+        }
+
+        .back_to_top p a:hover {
+            text-decoration: underline;
+            /* background-color: red; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><em>My Portfolio</em></h1>
+        </div>
+        <!-- NAVIGATION BAR CONTAINING BOOKMARK LINKS -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- NAVIGATION BAR CONTAINING BOOKMARK LINKS ENDS -->
+
+    </header>
+    <br><br><br>
+
+    <!-- ASIDE STARTS -->
+
+    <!-- IMAGE -->
+
+    <aside>
+        <img src="/Portfolio/images/power_favicon.png">
+    </aside>
+
+    <!-- ASIDE ENDS -->
+
+    <!-- SECTION STARTS -->
+
+    <section style="padding: 100px;">
+        <div style="padding: 30px;">
+            <p style=" color: grey; font-size: 20px;">INTRO</p>
+            <br>
+            <p style="font-size: 30px;">Hi. I'm Vidit, a Web Designer<br>based out of Panchkula, Haryana.</p>
+        </div>
+        <div style="padding: 30px;">
+            <p style="color: gray;">
+                ELSEWHERE
+                <!-- ISKE NEECHE SOCIAL MEDIA ICONS -->
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION ENDS-->
+
+    <!-- ARTICLE STARTS -->
+
+    <article>
+        <div id="about_me" class="about_border">
+            <div class="about">
+                <div>
+                    <h1>About Myself</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita odit dolores iure
+                        corrupti
+                        tenetur quaerat atque, itaque incidunt officiis quis modi rem quos, sint provident saepe quae
+                        cupiditate fugit totam? Ducimus asperiores exercitationem nemo similique autem beatae commodi
+                        maiores quo illum consectetur? Veritatis nihil porro suscipit laboriosam culpa pariatur?</p>
+                </div>
+                <br><br>
+                <div>
+                    <h1>Skills</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita odit dolores iure
+                        corrupti
+                        tenetur quaerat atque, itaque incidunt officiis quis modi rem quos, sint provident saepe quae
+                        cupiditate fugit totam? Ducimus asperiores exercitationem nemo similique autem beatae commodi
+                        maiores quo illum consectetur? Veritatis nihil porro suscipit laboriosam culpa pariatur?</p>
+                </div>
+                <br><br>
+                <div>
+                    <h1>Experiences</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita odit dolores iure
+                        corrupti
+                        tenetur quaerat atque, itaque incidunt officiis quis modi rem quos, sint provident saepe quae
+                        cupiditate fugit totam? Ducimus asperiores exercitationem nemo similique autem beatae commodi
+                        maiores quo illum consectetur? Veritatis nihil porro suscipit laboriosam culpa pariatur?</p>
+                </div>
+                <br><br>
+                <div>
+                    <h1>Interests</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita odit dolores iure
+                        corrupti
+                        tenetur quaerat atque, itaque incidunt officiis quis modi rem quos, sint provident saepe quae
+                        cupiditate fugit totam? Ducimus asperiores exercitationem nemo similique autem beatae commodi
+                        maiores quo illum consectetur? Veritatis nihil porro suscipit laboriosam culpa pariatur?</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ARTICLE ENDS -->
+
+    <br><br>
+
+    <!-- SECTION STARTS -->
+
+    <section id="projects">
+        <div class="projects">
+            <fieldset>
+                <legend>
+                    <h1><em>Projects</em></h1>
+                </legend>
+                <div>
+                    <div>
+                        <div class="project1">
+                            <h3>1st Project</h3>
+                            <a href="http://127.0.0.1:5500/Portfolio/Assignment4T2.html" target="_blank"><img
+                                    src="/Portfolio/images/My webpage ss.png"></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam voluptatem quam
+                                nulla nemo architecto aliquid vero recusandae ratione temporibus?</p>
+                        </div>
+                        <div class="project2">
+                            <h3>2nd Project</h3>
+                            <a href="http://127.0.0.1:5500/Portfolio/Assignment5FormT.html" target="_blank"><img
+                                    src="/Portfolio/images/My form ss.png"></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam voluptatem quam
+                                nulla nemo architecto aliquid vero recusandae ratione temporibus?</p>
+                        </div>
+                    </div>
+
+                    <div class="project3">
+                        <h3>3rd Project</h3>
+                        <a href="http://127.0.0.1:5500/Portfolio/Menu(hover).html" target="_blank"><img
+                                src="/Portfolio/images/hover menu gif.gif"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam voluptatem quam
+                            nulla nemo architecto aliquid vero recusandae ratione temporibus?
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- SECTION ENDS -->
+
+    <!-- SECTION STARS -->
+
+    <section id="contact">
+        <div class="last_sec">
+            <h1><em>Get In Touch With Me</em></h1>
+            <br><br>
+            <div class="form">
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your Full Name">
+                    <br>
+                    <br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="name" placeholder="Enter your Email Address">
+                    <br>
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea placeholder="Message for Me" rows="10" cols="48"></textarea>
+                    <br>
+                    <input type="submit" id="submit" value="Submit" placeholder="Enter your Email Address">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ENDS -->
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer_icons">
+                <a href="https://www.linkedin.com/in/vidit-dixit-4a7089281/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/viditdixit" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div>
+                <p>
+                    Copyright © 2023 Personal Portfolio. All Rights Reserved.
+                </p>
+                <div class="back_to_top">
+                    <p><a href="#">Back to Top</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

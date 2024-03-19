@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Using Table</title>
+
+    <!--                              DONT KNOW IF I SHOULD USE THE LINK FILE AFTER ADDING THE SCRIPT TAG -->
+
+    <!-- <link rel="stylesheet" href="https://fontawesome.com/icons/user?f=classic&s=solid"> -->
+    <script src="https://kit.fontawesome.com/cec40587c1.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        table,
+        td,
+        th {
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 7px;
+        }
+
+        th {
+            text-align: right;
+            padding: 7px;
+            width: 200px;
+        }
+
+        table {
+            margin-top: 30px;
+            margin-left: 15%;
+            margin-right: auto;
+            /* width: 60%; */
+        }
+
+        i {
+            /* border: 1px solid grey; */
+            text-align: center;
+            margin-top: 2px;
+            margin-left: 5px;
+            padding: 4px;
+            
+        }
+
+        /*                  for ALL the input boxes */
+        .container {
+            padding: 4px;
+            margin-left: 0px;
+            width: 260px;
+        }
+            
+         
+
+        /*                  for the STATE input box */
+        .container1 {
+            padding: 4px;
+            margin-left: 0px;
+            width: 272px;
+        }
+
+        .checkboxyes {
+            margin: 0 0 15px 0;
+        }
+
+        .checkboxno {
+            margin: 0 0 0 0;
+        }
+
+        .para {
+            
+            font-size: 25px;
+            margin: 25px 0px 0px 90px;
+        }
+
+        body {
+            background-color: #ededed;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">Contact Us Today!</p>
+    <!-- <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> -->
+        <table>
+            <form>
+            <tr>
+
+                <th>First Name</th>
+                <td></td>
+                <td>
+                    <i class="fa-solid fa-user icons"></i>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Last Name</th>
+                <td></td>
+                <td>
+                    <i class="fa-solid fa-user icons"></i>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>E-Mail</th>
+                <td></td>
+                <td>
+                    <i class="fa-sharp fa-solid fa-envelope icons"></i>
+                    <input type="email" id="email" name="email" placeholder="E-Mail Address" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Phone #</th>
+                <td></td>
+                <td>
+                    <i class="fa-solid fa-phone icons"></i>
+                    <input type="tel" id="tel" name="tel" placeholder="(845)555-1212" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Address</th>
+                <td></td>
+                <td>
+                    <i class="fa-sharp fa-solid fa-house icons"></i>
+                    <input type="text" id="address" name="address" placeholder="Address" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>City</th>
+                <td></td>
+                <td>
+                    <i class="fa-sharp fa-solid fa-house icons"></i>
+                    <input type="text" id="city" name="city" placeholder="city" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>State</th>
+                <td></td>
+
+                <!--                     CONTAINER1 CLASS BECAUSE HAD TO EDIT THE INPUT BOX OF STATE INDIVIDUALLY -->
+
+                <td>
+                    <i class="fa-solid fa-list-ul icons"></i>
+                    <select id="state" name="state" style="color: #4f4f4f;" class="container1">
+                        <option value="state">Please select your state</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Himachal">Himachal</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Zip Code</th>
+                <td></td>
+                <td>
+                    <i class="fa-sharp fa-solid fa-house icons"></i>
+                    <input type="text" id="zip" name="zip" placeholder="Zip Code" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Website or domain name</th>
+                <td></td>
+                <td>
+                    <i class="fa-solid fa-earth-asia icons"></i>
+                    <input type="text" id="site" name="site" placeholder="Website or domain name" class="container">
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Do you have hosting?</th>
+                <td></td>
+
+                <!--                        GAVE CLASSES TO CHECKBOXES TO EDIT THE SPACES BETWEEN THEM -->
+
+                <td>
+                    <input type="radio" id="host" name="host" class="checkboxyes">
+                    <label for="host">Yes</label>
+                    <br>
+                    <input type="radio" id="host" name="host" class="checkboxno">
+                    <label for="host">No</label>
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>Project Description</th>
+                <td></td>
+                <td>
+                    <i class="fa-solid fa-pencil icons"></i>
+                    <textarea cols="40" rows="2" placeholder="Project Description" class="container"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="send" style="background-color: #eea547; padding: 5px; color: white;">
+                </td>
+            </tr>
+        </form>
+        </table>
+    <!-- </div> -->
+</body>
+
+</html>
